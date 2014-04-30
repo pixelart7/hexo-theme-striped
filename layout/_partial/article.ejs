@@ -42,7 +42,7 @@
   <footer>
     <% if (index){ %>
      <% if (item.excerpt){ %>
-      <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
+      <a href="<%- config.url %><%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
      <% } %>
      <% if (item.comment && config.disqus_shortname){ %>
        <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
